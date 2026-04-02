@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Template Financiero</title>
+<!-- Incluye la fuente Orbitron y la librería SheetJS -->
+<link href="https://fonts.googleapis.com/css2?family=Orbitron&display=swap" rel="stylesheet" />
+<!-- Tu CSS personalizado -->
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<h1>Template Financiero</h1>
+
+<div class="buttons">
+  <button id="downloadTemplate">Descargar Template</button>
+  <input type="file" id="uploadFile" accept=".xlsx" style="display:none"/>
+  <button id="loadFileBtn">Cargar Archivo XLSX</button>
+  <button id="toggleNetChangesBtn">Net Changes</button>
+
+</div>
+
+<div id="financials">
+  <!-- La tabla se generará aquí dinámicamente -->
+</div>
+
+<!-- Popup para ratios o mensajes -->
+<div class="popup" id="popup">
+  <h3>Ratios y Datos</h3>
+  <div id="popupContent"></div>
+  <button id="closePopup">Cerrar</button>
+</div>
+
+<!-- Incluye SheetJS y tu script -->
+<script src="https://cdn.jsdelivr.net/npm/xlsx/dist/xlsx.full.min.js"></script>
+<script src="javascript.js"></script>
+</body>
+</html>

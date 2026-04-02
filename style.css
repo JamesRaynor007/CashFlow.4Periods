@@ -1,0 +1,155 @@
+/* Basic Reset */
+body {
+  font-family: 'Orbitron', 'Arial', sans-serif; /* Use a futuristic font if available */
+  margin: 20px;
+  background: #1a1a2e; /* Dark background for a tech vibe */
+  color: #E0E0E0; /* Light text for contrast */
+}
+
+/* Headings */
+h1 {
+  text-align: center;
+  color: #00FFCC; /* Vibrant cyan-like color for a futuristic look */
+  text-shadow: 0 0 10px #00FFCC, 0 0 20px #00FFCC;
+  font-family: 'Orbitron', sans-serif; /* Optional: a sci-fi font */
+  font-size: 2.5em;
+}
+
+/* Buttons container */
+.buttons {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-bottom: 25px;
+}
+
+/* Buttons */
+button {
+  padding: 12px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  border: none;
+  border-radius: 6px;
+  background: linear-gradient(135deg, #00FFCC, #00BFFF); /* Petrol gradient */
+  color: #fff;
+  box-shadow: 0 0 10px #00FFCC, inset 0 0 5px #00BFFF;
+  transition: all 0.3s ease;
+}
+
+button:hover {
+  background: linear-gradient(135deg, #00BFFF, #00FFCC);
+  box-shadow: 0 0 15px #00FFCC, inset 0 0 8px #00BFFF;
+  transform: scale(1.05);
+}
+
+/* Main container for financials */
+#financials {
+  max-width: 900px;
+  margin: 0 auto;
+  background: #2E1A47; /* Deep purple for a high-tech background */
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 0 20px rgba(0, 255, 204, 0.3), inset 0 0 10px rgba(0, 0, 0, 0.5);
+  border: 2px solid #00FFCC; /* Neon border */
+  transition: all 0.3s ease;
+}
+
+/* Table styles for a futuristic grid */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+}
+
+th {
+  background: linear-gradient(45deg, #00FFCC, #00BFFF);
+  color: #fff;
+  text-align: left;
+  padding: 10px;
+  font-size: 1.1em;
+  border-radius: 6px;
+  box-shadow: 0 0 8px #00FFCC inset;
+}
+
+td {
+  padding: 10px;
+  border-bottom: 1px solid #444;
+  font-family: 'Orbitron', sans-serif;
+  font-size: 1em;
+}
+
+/* Section headers styling for emphasis */
+.section-header {
+  background: #4B0082; /* Indigo dark for contrast */
+  color: #00FFCC; /* Neon cyan text */
+  font-weight: bold;
+  font-size: 1.2em;
+  padding: 12px;
+  border-radius: 6px;
+  margin-top: 10px;
+  box-shadow: 0 0 8px #00FFCC inset;
+}
+
+/* Highlighted cells or key data */
+td#grossProfit,
+td#operatingIncome,
+td#netIncome {
+  font-weight: bold;
+  color: #00FFCC;
+}
+
+/* Percentage ratios in bright color */
+#grossMargin,
+#netMargin,
+#operatingMargin {
+  font-weight: bold;
+  color: #7CFC00; /* LawnGreen for emphasis */
+}
+
+/* Popup styling for ratios display */
+.popup {
+  display: none;
+  position: fixed;
+  top: 25%;
+  left: 50%;
+  transform: translateX(-50%);
+  background: linear-gradient(135deg, #1a1a2e, #4B0082);
+  padding: 30px;
+  border: 2px solid #00FFCC;
+  border-radius: 12px;
+  box-shadow: 0 0 20px #00FFCC, inset 0 0 10px rgba(255,255,255,0.2);
+  z-index: 1000;
+  max-width: 450px;
+  color: #fff;
+  font-family: 'Orbitron', sans-serif;
+  font-size: 1.2em;
+}
+
+.popup h3 {
+  margin-top: 0;
+  color: #00FFCC;
+}
+
+.popup button {
+  margin-top: 15px;
+  padding: 10px 20px;
+  background: #00FFCC;
+  color: #000;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: all 0.3s ease;
+}
+
+.popup button:hover {
+  background: #00BFFF;
+  color: #fff;
+  transform: scale(1.05);
+}
+
+/* Additional hover effects for table rows for a high-tech feel */
+tbody tr:hover {
+  background: rgba(0, 255, 204, 0.1);
+  transition: background 0.2s ease;
+}
